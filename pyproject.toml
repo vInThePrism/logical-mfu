@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logical-mfu"
+version = "0.1.0"
+description = "Kernel-invariant MFU/HFU: logical FLOPs from the model config and runtime token counts"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/vInThePrism/logical-mfu"
+
+[project.optional-dependencies]
+hf = ["transformers", "torch"]
+test = ["pytest"]
+
+[tool.setuptools]
+packages = ["logical_mfu"]
